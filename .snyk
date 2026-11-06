@@ -1,9 +1,9 @@
 ignore:
   SNYK-JS-MARSDB-480405:
     - '*':
-        reason: 'marsdb 0.6.11 adalah dependensi production langsung (dependencies) yang dipakai aplikasi, dan hingga kini belum ada versi perbaikan dari maintainer sehingga tidak bisa diatasi dengan upgrade. Risiko diterima sementara karena OWASP Juice Shop adalah aplikasi latihan yang memang sengaja rentan, tidak dipakai untuk data nyata, dan akan ditinjau ulang saat exception ini kedaluwarsa.'
+        reason: 'marsdb 0.6.11 dipanggil di <file>:<baris> untuk <fungsi>. <input pengguna tidak sampai ke pemanggilan ini, atau mitigasi yang dilakukan>. Tidak ada versi aman. Rencana: <ganti library atau tindak lanjut>.'
         expires: 2027-03-31T00:00:00.000Z
   SNYK-JS-DECOMPRESS-20254116:
     - '*':
-        reason: 'decompress 4.2.1 dibawa oleh download@8.0.0 (dependensi production) dan Snyk tidak menyediakan jalur upgrade maupun versi perbaikan. Risiko diterima sementara karena aplikasi ini lingkungan latihan tanpa data nyata, dan paket download perlu dievaluasi atau diganti pada peninjauan ulang saat exception ini kedaluwarsa.'
+        reason: 'decompress 4.2.1 dibawa oleh download@8.0.0 (dependensi production). Snyk tidak menyediakan versi aman. <mitigasi yang sesuai>. Rencana: <tindak lanjut>.'
         expires: 2027-03-31T00:00:00.000Z
