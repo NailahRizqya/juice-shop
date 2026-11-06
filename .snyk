@@ -1,9 +1,9 @@
 ignore:
   SNYK-JS-MARSDB-480405:
     - '*':
-        reason: 'marsdb 0.6.11 dipanggil di <file>:<baris> untuk <fungsi>. <input pengguna tidak sampai ke pemanggilan ini, atau mitigasi yang dilakukan>. Tidak ada versi aman. Rencana: <ganti library atau tindak lanjut>.'
+        reason: 'marsdb 0.6.11 dipakai sebagai data layer (data/mongodb.ts). Beberapa rute memanggil query $where dengan nilai dari request (routes/showProductReviews.ts dan routes/trackOrder.ts), sehingga jalur ke kerentanan ini terjangkau. Juice Shop adalah aplikasi latihan yang sengaja dibuat rentan (kode rentan diberi penanda vuln-code-snippet) dan hanya dijalankan secara lokal dengan data palsu. Risiko diterima hingga batas waktu. Rencana: mengganti marsdb dan query $where berbasis string sebelum aplikasi dipakai di luar latihan.'
         expires: 2027-03-31T00:00:00.000Z
   SNYK-JS-DECOMPRESS-20254116:
     - '*':
-        reason: 'decompress 4.2.1 dibawa oleh download@8.0.0 (dependensi production). Snyk tidak menyediakan versi aman. <mitigasi yang sesuai>. Rencana: <tindak lanjut>.'
+        reason: 'decompress 4.2.1 dibawa oleh download@8.0.0 untuk fitur ekstraksi arsip. Aplikasi hanya memanggil download melalui downloadToFile dan downloadData dengan opsi agent (lib/utils.ts), tanpa opsi extract, sehingga decompress tidak dipanggil dan kerentanan directory traversal tidak terpicu. Snyk tidak menyediakan versi aman. Rencana: memperbarui atau mengganti download sebelum aplikasi dipakai di luar latihan.'
         expires: 2027-03-31T00:00:00.000Z
