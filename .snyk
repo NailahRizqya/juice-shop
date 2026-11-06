@@ -7,3 +7,19 @@ ignore:
     - '*':
         reason: 'decompress 4.2.1 dibawa oleh download@8.0.0 untuk fitur ekstraksi arsip. Aplikasi hanya memanggil download melalui downloadToFile dan downloadData dengan opsi agent (lib/utils.ts), tanpa opsi extract, sehingga decompress tidak dipanggil dan kerentanan directory traversal tidak terpicu. Snyk tidak menyediakan versi aman. Rencana: memperbarui atau mengganti download sebelum aplikasi dipakai di luar latihan.'
         expires: 2027-03-31T00:00:00.000Z
+  SNYK-JS-DECOMPRESS-17874437:
+    - '*':
+        reason: 'decompress 4.2.1 dibawa oleh download@8.0.0 untuk fitur ekstraksi arsip. Aplikasi hanya memanggil download melalui downloadToFile dan downloadData dengan opsi agent (lib/utils.ts), tanpa opsi extract, sehingga decompress tidak dipanggil dan kerentanan directory traversal tidak terpicu. Snyk tidak menyediakan versi aman. Rencana: memperbarui atau mengganti download sebelum aplikasi dipakai di luar latihan.'
+        expires: 2027-03-31T00:00:00.000Z
+  SNYK-JS-DECOMPRESS-17937347:
+    - '*':
+        reason: 'decompress 4.2.1 dibawa oleh download@8.0.0 untuk fitur ekstraksi arsip. Aplikasi hanya memanggil download melalui downloadToFile dan downloadData dengan opsi agent (lib/utils.ts), tanpa opsi extract, sehingga decompress tidak dipanggil dan kerentanan directory traversal tidak terpicu. Snyk tidak menyediakan versi aman. Rencana: memperbarui atau mengganti download sebelum aplikasi dipakai di luar latihan.'
+        expires: 2027-03-31T00:00:00.000Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964064:
+    - '*':
+        reason: 'http-cache-semantics 3.8.1 dibawa oleh got@8.3.2 dan cacheable-request@2.1.4 melalui download@8.0.0. Jalur ini hanya aktif jika opsi cache diaktifkan. Download tidak memakai opsi cache, aplikasi tidak memanggil got secara langsung, dan pencarian di node_modules/download serta kode aplikasi tidak menemukan opsi cache. Snyk tidak menyediakan versi aman. Rencana: memperbarui atau mengganti download sebelum aplikasi dipakai di luar latihan.'
+        expires: 2027-03-31T00:00:00.000Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964068:
+    - '*':
+        reason: 'http-cache-semantics 3.8.1 dibawa oleh got@8.3.2 dan cacheable-request@2.1.4 melalui download@8.0.0. Jalur ini hanya aktif jika opsi cache diaktifkan. Download tidak memakai opsi cache, aplikasi tidak memanggil got secara langsung, dan pencarian di node_modules/download serta kode aplikasi tidak menemukan opsi cache. Snyk tidak menyediakan versi aman. Rencana: memperbarui atau mengganti download sebelum aplikasi dipakai di luar latihan.'
+        expires: 2027-03-31T00:00:00.000Z
